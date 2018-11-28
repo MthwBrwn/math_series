@@ -17,6 +17,8 @@ This application is written in Python3.
 ## Change Log
 
 10:13 finished with test conditions for fibonacci. starting with lucas feature
+10:39 Lucas feature tests complete and function set up
+11:20 added testing conditions for optional input and had conditions pass
 
 
 

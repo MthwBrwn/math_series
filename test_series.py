@@ -48,4 +48,39 @@ def test_lucas_at8():
     expected = 29
     assert series.lucas(actual) == expected
 
+"""tests code of series with only on input """
+def test_sum_series_at_one_input():
+    actual = 1
+    expected = 0
+    assert series.sum_series(actual) == expected
+
+
+""" tests function when a single opt argument is made"""
+def test_sum_series_at_two_inputs():
+    actual = 4
+    opt  = 1
+    expected = 3
+    assert series.sum_series(actual,opt) == expected
+
+""" test if entering a zero produces same as default"""
+def test_sum_series_at_two_inputs_zero_on_opt():
+    actual = 4
+    opt = 0
+    expected = 2
+    assert series.sum_series(actual) == expected
+
+"""testing with zero in 2nd position"""
+def test_sum_series_at_three_inputs_zero_on_opt2():
+    actual = 4
+    opt = 9
+    opt2 = 0
+    expected = 18
+    assert series.sum_series(actual, opt, opt2) == expected
+
+
+
+
+
+
+
 
