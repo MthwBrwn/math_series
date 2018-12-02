@@ -20,11 +20,13 @@ This application is written in Python3.6
 10:39 Lucas feature tests complete and function set up
 11:20 added testing conditions for optional input and had conditions pass
 
+### resubmit----
+
 13:27 1 DEC putting changes in code
--doc strings inside functions
-linting errors
-finish name = main
-- review last test
+-[x] doc strings inside functions
+-[x] linting errors
+-[] finish name = main
+-[] review last test
 
 
 
