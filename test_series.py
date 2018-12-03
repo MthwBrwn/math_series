@@ -74,7 +74,6 @@ def test_sum_series_at_two_inputs():
 def test_sum_series_at_two_inputs_zero_on_opt():
     """ test if entering a zero produces same as default"""
     actual = 4
-    # opt = 0
     expected = 3
     assert series.sum_series(actual) == expected
 
@@ -95,12 +94,7 @@ def test_sum_series_with_neg_number():
     assert series.sum_series(actual) == expected
 
 
-def test_sum_series_with_string_in_opt1_field():
-    """testing with a neg n """
-    actual = 0
-    opt = "butter"
-    expected = "you'll need to enter a positive integer"
-    assert series.sum_series(actual, opt) == expected
+
 
 
 

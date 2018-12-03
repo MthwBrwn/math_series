@@ -1,7 +1,7 @@
 def fibonacci(n):
     """ This takes an 'n' from user and returns a number which is the nth position on Fibonacci sequence """
     subtotal1, subtotal2 = 0, 1
-    if n < 0 or type(n) is not int:
+    if n < 0:
         return("you'll need to enter a positive integer")
     if n == 0:
         return (0)
@@ -29,10 +29,10 @@ def lucas(n):
 
 def sum_series(n, opt1=0, opt2=1):
     """This function uses optional inputs for the user to set up their own number sequences"""
-    if n < 0 or type(n) is not int:
-        raise TypeError("you'll need to enter a positive integer")
-    if opt1 < 0 or type(opt1) is not int:
-        raise TypeError("you'll need to enter a positive integer")
+    if n < 0:
+        return("you'll need to enter a positive integer")
+    if (opt1) < 0:
+        return("you'll need to enter a positive integer")
     if opt2 < 0:
         return("you'll need to enter a positive integer")
     subtotal1, subtotal2 = opt1, opt2
