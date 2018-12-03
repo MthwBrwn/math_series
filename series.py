@@ -29,7 +29,7 @@ def lucas(n):
 
 def sum_series(n, opt1=0, opt2=1):
     """This function uses optional inputs for the user to set up their own number sequences"""
-    if n <= 0:
+    if n < 0:
         return("you'll need to enter a positive integer")
     if opt1 < 0:
         return("you'll need to enter a positive integer")
@@ -38,9 +38,9 @@ def sum_series(n, opt1=0, opt2=1):
     subtotal1, subtotal2 = opt1, opt2
 
     if n == 0:
-        return n
+        return opt1
     if n == 1:
-        return subtotal1
+        return opt2
     for i in range(2, n + 1):
         subtotal1, subtotal2 = subtotal2, subtotal1 + subtotal2
     return(subtotal2)
