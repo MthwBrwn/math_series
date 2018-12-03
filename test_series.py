@@ -79,16 +79,28 @@ def test_sum_series_at_two_inputs_zero_on_opt():
     assert series.sum_series(actual) == expected
 
 
-# def test_sum_series_at_three_inputs_zero_on_opt2():
-#     """testing with zero in 2nd position"""
-#     actual = 4
-#     opt = 9
-#     opt2 = 0
-#     expected = 18
-#     assert series.sum_series(actual, opt, opt2) == expected
+def test_sum_series_at_three_inputs_zero_on_opt2():
+    """testing with zero in 2nd position"""
+    actual = 4
+    opt = 9
+    opt2 = 0
+    expected = 18
+    assert series.sum_series(actual, opt, opt2) == expected
 
 
+def test_sum_series_with_neg_number():
+    """testing with a neg n """
+    actual = -2
+    expected = "you'll need to enter a positive integer"
+    assert series.sum_series(actual) == expected
 
+
+def test_sum_series_with_string_in_opt1_field():
+    """testing with a neg n """
+    actual = 0
+    opt = "butter"
+    expected = "you'll need to enter a positive integer"
+    assert series.sum_series(actual, opt) == expected
 
 
 
