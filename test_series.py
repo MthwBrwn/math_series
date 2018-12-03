@@ -63,20 +63,20 @@ def test_sum_series_at_one_input():
     assert series.sum_series(actual) == expected
 
 
-# def test_sum_series_at_two_inputs():
-#     """ tests function when a single opt argument is made"""
-#     actual = 4
-#     opt = 1
-#     expected = 3
-#     assert series.sum_series(actual, opt) == expected
+def test_sum_series_at_two_inputs():
+    """ tests function when a single opt argument is made"""
+    actual = 4
+    opt = 1
+    expected = 5
+    assert series.sum_series(actual, opt) == expected
 
 
-# def test_sum_series_at_two_inputs_zero_on_opt():
-#     """ test if entering a zero produces same as default"""
-#     actual = 4
-#     # opt = 0
-#     expected = 2
-#     assert series.sum_series(actual) == expected
+def test_sum_series_at_two_inputs_zero_on_opt():
+    """ test if entering a zero produces same as default"""
+    actual = 4
+    # opt = 0
+    expected = 3
+    assert series.sum_series(actual) == expected
 
 
 # def test_sum_series_at_three_inputs_zero_on_opt2():
