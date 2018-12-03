@@ -21,17 +21,17 @@ def test_fibonacci_at1():
     assert series.fibonacci(actual) == expected
 
 
-def test_fibonacci_at13():
+def test_fibonacci_at7():
     """ test for answer at a large number"""
-    actual = 13
-    expected = 144
+    actual = 7
+    expected = 13
     assert series.fibonacci(actual) == expected
 
 
 def test_lucas_at0():
     """ test for lucas a a zero figure"""
     actual = 0
-    expected = "you'll need to enter a positive integer"
+    expected = 2
     assert series.lucas(actual) == expected
 
 

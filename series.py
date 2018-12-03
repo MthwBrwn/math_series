@@ -1,11 +1,13 @@
 def fibonacci(n):
     """ This takes an 'n' from user and returns a number which is the nth position on Fibonacci sequence """
     subtotal1, subtotal2 = 0, 1
-    if n < 0:
+    if n < 0 or type(n) is not int:
         return("you'll need to enter a positive integer")
+    if n == 0:
+        return (0)
     if n == 1:
         return (1)
-    for i in range(n - 1):
+    for i in range(2, n + 1):
         subtotal1, subtotal2 = subtotal2, subtotal1 + subtotal2
     return(subtotal2)
 
@@ -16,9 +18,11 @@ def lucas(n):
     subtotal1, subtotal2 = 2, 1
     if n < 0:
         return("you'll need to enter a positive integer")
+    if n == 0:
+        return (2)
     if n == 1:
         return (1)
-    for i in range(n - 1):
+    for i in range(2, n + 1):
         subtotal1, subtotal2 = subtotal2, subtotal1 + subtotal2
     return(subtotal2)
 
@@ -32,10 +36,12 @@ def sum_series(n, opt1=0, opt2=1):
     if opt2 < 0:
         return("you'll need to enter a positive integer")
     subtotal1, subtotal2 = opt1, opt2
-    if n == 1:
-        return (subtotal1)
 
-    for i in range(n - 2):
+    if n == 0:
+        return n
+    if n == 1:
+        return subtotal1
+    for i in range(2, n + 1):
         subtotal1, subtotal2 = subtotal2, subtotal1 + subtotal2
     return(subtotal2)
 
